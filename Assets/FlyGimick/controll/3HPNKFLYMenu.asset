@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 3HPNKFLYMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Feeling
+    icon: {fileID: 2800000, guid: af1ba8919b0ccb94a99caf43ac36f97d, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 1eaf04837fea44e4c83f5a7de286569c, type: 2}
+    subParameters: []
+    labels: []
+  - name: Eye
+    icon: {fileID: 2800000, guid: 9a3b597cfed7cff4ea6857d9357d4acc, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 6b0faeb452e225d4c92fff74953aaa6d, type: 2}
+    subParameters: []
+    labels: []
+  - name: Special
+    icon: {fileID: 2800000, guid: 0ff9333af28b8224893850e22c95e496, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 41cff8842baa9be41a0b38cb276062d2, type: 2}
+    subParameters: []
+    labels: []
+  - name: Clothing
+    icon: {fileID: 2800000, guid: a63e17d68afd5af41b41689c399c9d9f, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 6e4609e416ba90841b8164cd7d949b6f, type: 2}
+    subParameters: []
+    labels: []
+  - name: Fly
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: Fly
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
