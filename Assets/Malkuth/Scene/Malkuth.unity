@@ -271,6 +271,31 @@ ParentConstraint:
     weight: 0
   - sourceTransform: {fileID: 902987387}
     weight: 1
+--- !u!1818360608 &489850767
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489850763}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0.76257336, y: 1.0750612, z: 0.012761593}
+  m_TranslationOffset: {x: 0.76257336, y: 1.0750612, z: 0.012761593}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 499782845}
+    weight: 1
+--- !u!4 &499782845 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2062485437142636106, guid: a26fa60b76ba8644986ad02e692c108d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1702021586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &568753045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,7 +5241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1196135828297054, guid: 2cd7c2d73a12a214b930125a1ca4ed33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4364010554535032, guid: 2cd7c2d73a12a214b930125a1ca4ed33, type: 3}
       propertyPath: m_RootOrder
@@ -5279,7 +5304,7 @@ PrefabInstance:
     - target: {fileID: 2062485437142636106, guid: a26fa60b76ba8644986ad02e692c108d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.607
       objectReference: {fileID: 0}
     - target: {fileID: 2062485437142636106, guid: a26fa60b76ba8644986ad02e692c108d,
         type: 3}
@@ -5510,7 +5535,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9fb31d60454f7b645bb6787dc20635ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.607
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fb31d60454f7b645bb6787dc20635ff,
         type: 3}
@@ -5915,8 +5940,8 @@ MonoBehaviour:
     name: Fly
   - hash: 1773176743
     name: Floating
-  - hash: 679621692
-    name: New State
+  - hash: 1184996124
+    name: landing
   - hash: -2137589102
     name: JumpAndFall.Short Fall
   - hash: -862280380
@@ -6001,6 +6026,10 @@ MonoBehaviour:
     name: Pikopiko
   - hash: 958151961
     name: New State
+  - hash: -957563797
+    name: notGlide
+  - hash: 1881581332
+    name: glide
   - hash: 812496023
     name: Heart0
   - hash: 1198162945
@@ -6067,18 +6096,18 @@ MonoBehaviour:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220864}
-    radius: 0.059868775
+    radius: 0.059868786
     height: 0
-    position: {x: 0.000000100235184, y: 0.04496175, z: -0.000005394686}
+    position: {x: 0.00000008533402, y: 0.04496175, z: -0.000005394686}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_torso:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220861}
-    radius: 0.09071022
+    radius: 0.09071024
     height: 0.30763137
-    position: {x: 0.0000010127283, y: -0.03452993, z: 0.016143998}
-    rotation: {x: -0.052549597, y: 0, z: 0.0000032865396, w: 0.9986183}
+    position: {x: 0.0000009950331, y: -0.03452993, z: 0.016143998}
+    rotation: {x: -0.052549597, y: 0, z: 0.000003331305, w: 0.9986183}
   collider_footR:
     isMirrored: 1
     state: 0
@@ -6099,32 +6128,32 @@ MonoBehaviour:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220855}
-    radius: 0.031847976
-    height: 0.1273919
-    position: {x: -0.0028912607, y: 0.10764029, z: 0.011422723}
+    radius: 0.03184797
+    height: 0.12739187
+    position: {x: -0.0028912607, y: 0.107640184, z: 0.011422724}
     rotation: {x: 0.6923722, y: 0, z: 0.27311188, w: 0.66785526}
   collider_handL:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220851}
-    radius: 0.03184795
-    height: 0.1273918
-    position: {x: 0.0028911908, y: 0.10764059, z: 0.011422779}
-    rotation: {x: 0.6924133, y: 0, z: -0.27301034, w: 0.66785425}
+    radius: 0.031847905
+    height: 0.12739162
+    position: {x: 0.0028911908, y: 0.10764049, z: 0.011422778}
+    rotation: {x: 0.69241333, y: 0, z: -0.27301037, w: 0.6678542}
   collider_fingerIndexL:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220850}
-    radius: 0.026742293
-    height: 0.13371146
+    radius: 0.026742268
+    height: 0.13371134
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerMiddleL:
     isMirrored: 1
     state: 0
     transform: {fileID: 1916220849}
-    radius: 0.026740398
-    height: 0.13370198
+    radius: 0.02674035
+    height: 0.13370174
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerRingL:
@@ -6399,19 +6428,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1916220836}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1916220876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916220837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 0
 --- !u!1 &1977083826
 GameObject:
   m_ObjectHideFlags: 0
@@ -17647,7 +17663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8831603171571510348
 MonoBehaviour:
   m_ObjectHideFlags: 0
